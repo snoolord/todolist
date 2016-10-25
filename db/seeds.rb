@@ -7,5 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-myTodo = Todo.create!(body: "Eat chipotle", title: "Bogo bogo", done: false)
+myTodo = Todo.create!(body: "Eat chipotle", title: "Nahß", done: false)
 nextTodo = Todo.create!(title: "wacky wednesday", body: "finish bonus", done: true)
