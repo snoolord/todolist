@@ -18,6 +18,10 @@ const _defaultState = {
 function TodosReducer (oldState = _defaultState, action) {
   Object.freeze(oldState);
   switch(action.type) {
+    case RECEIVE_TODOS:
+      let newState = {};
+      action.todos.forEach(todo => newState[todo.id] = todo);
+      return newState;
     default:
       return oldState;
   }
